@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Geow\\DiskMetrics\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'Geow\\DiskMetrics\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
         );
     }
 
@@ -26,11 +26,5 @@ class TestCase extends Orchestra
 
     public function getEnvironmentSetUp($app)
     {
-        config()->set('database.default', 'testing');
-
-        /*
-        $migration = include __DIR__.'/../database/migrations/create_disk-metrics_table.php.stub';
-        $migration->up();
-        */
     }
 }

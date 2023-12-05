@@ -1,9 +1,9 @@
 {
     "name": "geowrgetudor/disk-metrics",
-    "description": "This is my package disk-metrics",
+    "description": "Monitor disk size, file & directory count for Laravel Pulse",
     "keywords": [
-        "George Tudor",
         "laravel",
+        "pulse",
         "disk-metrics"
     ],
     "homepage": "https://github.com/geowrgetudor/disk-metrics",
@@ -16,9 +16,10 @@
         }
     ],
     "require": {
-        "php": "^8.1",
+        "php": "^8.2",
         "spatie/laravel-package-tools": "^1.14.0",
-        "illuminate/contracts": "^10.0"
+        "illuminate/contracts": "^10.0",
+        "laravel/pulse": "^1.0@beta"
     },
     "require-dev": {
         "laravel/pint": "^1.0",
@@ -75,6 +76,6 @@
             }
         }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "beta",
     "prefer-stable": true
 }
