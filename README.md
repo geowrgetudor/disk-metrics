@@ -1,12 +1,15 @@
-# This is my package disk-metrics
+<p align="center"><img src="/disk-metrics.png" alt="Disk Metrics for Laravel Pulse"></p>
+
+# Disk Metrics for Laravel Pulse
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/geowrgetudor/disk-metrics.svg?style=flat-square)](https://packagist.org/packages/geowrgetudor/disk-metrics)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/geowrgetudor/disk-metrics/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/geowrgetudor/disk-metrics/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/geowrgetudor/disk-metrics/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/geowrgetudor/disk-metrics/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/geowrgetudor/disk-metrics.svg?style=flat-square)](https://packagist.org/packages/geowrgetudor/disk-metrics)
 
-A Laravel Pulse package that adds metrics about your storage.
-Supports `local` and `s3` drivers.
+Credits to [Aaron Francis](https://github.com/aarondfrancis) for his Pulse tutorial.
+
+This is a Laravel Pulse package that adds metrics for your Local and S3 storage.
 
 -   Total Size
 -   Total Files
