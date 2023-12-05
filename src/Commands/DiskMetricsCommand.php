@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Geow\DiskMetrics\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class DiskMetricsCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'disk-metrics';
 
     public $description = 'My command';
 
