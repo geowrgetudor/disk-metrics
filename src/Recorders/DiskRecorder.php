@@ -22,10 +22,6 @@ class DiskRecorder
 
     public function record(SharedBeat $event): void
     {
-        if (!config('disk-metrics.enabled', false)) {
-            return;
-        }
-
         if ($event->time->minute % DiskMetrics::interval() !== 0) {
             return;
         }

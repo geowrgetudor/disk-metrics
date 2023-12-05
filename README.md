@@ -34,11 +34,6 @@ This is the contents of the published config file:
 ```php
 return [
     /**
-     * Determines the state o the package
-     */
-    'enabled' => env('GEOW_DISK_METRICS', true),
-
-    /**
      * Track disks defined in filesystems.php config file.
      * Support only 'local' or 's3' driver.
      *
@@ -78,7 +73,9 @@ return [
     'recorders' => [
         // Existing recorders...
 
-        \Geow\DiskMetrics\Recorders\DiskRecorder::class => []
+        \Geow\DiskMetrics\Recorders\DiskRecorder::class => [
+            'enabled' => env('GEOW_DISK_METRICS', true),
+        ]
     ]
 ]
 ```

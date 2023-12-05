@@ -2,11 +2,6 @@
 
 return [
     /**
-     * Determines the state o the package
-     */
-    'enabled' => env('GEOW_DISK_METRICS', true),
-
-    /**
      * Track disks defined in filesystems.php config file.
      * Support only 'local' or 's3' driver.
      *
