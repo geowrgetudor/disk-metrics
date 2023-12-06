@@ -20,6 +20,8 @@ class DiskMetricsServiceProvider extends PackageServiceProvider
 
     public function boot(): void
     {
+        parent::boot();
+
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'disk-metrics');
 
         $this->callAfterResolving('livewire', function (LivewireManager $livewire, Application $app) {

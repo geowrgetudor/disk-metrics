@@ -31,8 +31,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Geow\\DiskMetrics\\": "src/",
-            "Geow\\DiskMetrics\\Database\\Factories\\": "database/factories/"
+            "Geow\\DiskMetrics\\": "src/"
         }
     },
     "autoload-dev": {
